@@ -1,0 +1,551 @@
+/* Home.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    width: 100%;
+}
+.home-heading-top{
+    font-family: roboto;    
+    font-size: 30px;
+    color: white;
+}
+/* General Page Styling */
+.home {
+    padding: 40px;
+    background: linear-gradient(135deg, #766e6b);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Intro Card */
+/* Intro Card */
+.intro-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    color: #fff; /* White text on top of background */
+}
+
+.intro-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://i.pinimg.com/originals/c8/67/3a/c8673ad4c46ade00cf3bd0049db62b16.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px); /* Apply a small blur effect */
+    z-index: -1; /* Ensure the background stays behind the content */
+}
+.skills-scroll{
+    width: 95vw;
+}
+.intro-card-content {
+    width: 50%;
+    color: #fff; /* Ensure text is visible over the background */
+}
+.home-heading-span-sr {
+    color: #ffd700; /* Gold color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 25px rgba(255, 215, 0, 0.8); /* 3D effect with shadow */
+    font-weight: bold;
+    font-size: 3rem; /* Adjust size as needed */
+}
+.home-top-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #ffd700; /* Gold color */
+    border: none;
+    border-radius: 8px;
+    color: rgb(46, 46, 130);
+    font-weight: bold;
+    font-family: roboto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.home-top-button:hover {
+    transform: translateY(-4px); /* Moves button up on hover */
+    
+}
+
+.home-top-button:active {
+    transform: translateY(2px); /* Button moves down when clicked */
+   
+}
+
+.intro-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+    font-family: 'Roboto', sans-serif; /* Google Font */
+}
+
+.home-heading-services-top{
+color: rgb(36, 86, 185);
+font-size: 40px;
+text-align: center;
+margin-top: 30px;
+}
+
+.intro-text {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+}
+
+.intro-card-image {
+    width: 45%;
+}
+
+.intro-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.intro-card:hover .intro-image {
+    transform: scale(1.05);
+}
+
+
+.intro-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.intro-card-content {
+    width: 50%;
+    color: #fff; /* Ensures text is visible over the background */
+}
+
+.intro-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+    font-family: 'Roboto', sans-serif; /* Google Font */
+}
+
+
+
+.intro-text {
+    font-size: 1.4rem;
+    color: #e0e0e0; /* Lighter text color for readability */
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+}
+.home-paragraph-services-top{
+    color: rgb(131, 122, 122);
+    font-size: 20px;
+}
+.intro-card-image {
+    width: 45%;
+}
+
+.intro-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.intro-card:hover .intro-image {
+    transform: scale(1.05);
+}
+
+/* Skills Section */
+.skills {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.skill-card {
+    background-color: #f8fafc;
+    border-radius: 12px;
+    padding: 20px;
+    width: 160px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    background-color: #ffd700;
+}
+.home-services-card-heading{
+    padding-top: 20px;
+}
+.skill-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover .skill-img {
+    transform: scale(1.1);
+}
+
+.skill-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Services Section */
+.services {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    margin-top: 40px;
+    background-color: #c2c7cc;
+    
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.service-cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    gap: 30px;
+    
+    margin-top: 30px;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+   
+    width: 23%;
+    text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 20%;
+}
+.Services-heading-card{
+    text-align: center;
+}
+.service-card:hover {
+    transform: translateY(-10px);
+    background-color: #e8c40d;
+    color: white;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Portfolio Section */
+.portfolio {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.portfolio-item {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #f4f7fc;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+.home-image-services{
+    height: 51%;
+    width: 100%;
+    border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.portfolio-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    
+    
+}
+
+.portfolio-item:hover .portfolio-img {
+    transform: scale(1.1);
+}
+
+.portfolio-item p {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.portfolio-item:hover p {
+    color: #ff7e5f;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    margin-top: 60px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.contact-text {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.contact:hover .contact-text {
+    color: #ff6f61;
+}
+
+/* Section Titles */
+h1, h2, h3 {
+    color: #1e3a8a;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.projects-page{
+    width: 100%;
+    margin-top: 20px;
+}
+.projects-grid{
+    width: 100%;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.intro-card, .skills, .services, .portfolio, .contact {
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Responsive Styles */
+
+.freelance-card {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .card-image {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+  }
+  
+  .text-content {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .text-content h2 {
+    font-size: 2rem;
+    color: #0056b3;
+    margin-bottom: 20px;
+  }
+  
+  .text-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 768px) {
+    .home-heading-services-top{
+        color: rgb(36, 86, 185);
+        font-size: 25px;
+        text-align: center;
+        margin-top: 30px;
+        }
+
+    /* Adjusting the intro card for mobile */
+    .intro-card {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .intro-card-content {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .intro-card-image {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .intro-image {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+
+    /* Adjusting title and text for mobile */
+    .intro-title {
+        font-size: 2.5  rem;
+        text-align: center;
+        font-family: roboto;
+    }
+
+    .intro-text {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    /* Skills Section */
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .service-cards {
+        flex-wrap: wrap;
+    }
+    .service-card{
+        width: 45%;
+    }
+    .card-content {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+        
+      }
+    
+      .card-image {
+        width: 100%;
+        height: 50%;
+      }
+    
+      .text-content {
+        width: 100%;
+      }
+      .card-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+  
+      
+    
+      .card-image {
+        width: 100%;
+      }
+    
+      .text-content {
+        width: 100%,
+        
+     
+
+      }
+}
+  
+@media (max-width: 480px) {
+    .home-paragraph-services-top{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .service-card{
+        width: 100%;
+    }
+}
+  

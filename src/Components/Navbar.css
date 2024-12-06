@@ -1,0 +1,136 @@
+/* Navbar.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #1f3a6d; /* Dark blue background */
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-container {
+    width: 85%; /* Adjusted for better alignment */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 60px;
+    border-radius: 4px;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 20px;
+  }
+  
+  .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #3498db; /* Blue highlight color */
+    color: #fff;
+  }
+  
+  /* Hamburger menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    justify-content: space-between;
+  }
+  
+  .line {
+    width: 30px;
+    height: 4px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+  }
+  
+  .line.open:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 7px;
+  }
+  
+  .line.open:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .line.open:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -7px;
+  }
+  
+  /* Mobile menu styles */
+  .nav-links.active {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #1f3a6d;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .nav-links li {
+    margin: 12px 0;
+  }
+  
+  .nav-links a {
+    font-size: 20px;
+    padding: 12px 20px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbar-container {
+      flex-direction: row; /* Ensure items are in a row */
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .nav-links {
+      display: flex;
+      width: 100%;
+      justify-content: flex-start;
+    }
+  
+    .hamburger {
+      display: flex;
+      position: absolute;
+      right: 20px; /* Positioned on the right side */
+      top: 18px;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  }
+  
