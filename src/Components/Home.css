@@ -450,50 +450,63 @@ h1, h2, h3 {
   }
 
   @media (max-width: 768px) {
-    .home-heading-services-top{
-        color: rgb(36, 86, 185);
-        font-size: 25px;
-        text-align: center;
-        margin-top: 30px;
-        }
-
-    /* Adjusting the intro card for mobile */
     .intro-card {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        
+        flex-direction: column; /* Stack image and content vertically */
+        width: 100%; /* Full width for smaller screens */
+        padding: 15px; /* Adjust padding for better spacing */
+        margin: 15px auto; /* Center the container */
+        background-size: cover; /* Ensure the background scales well */
+        border-radius: 8px; /* Rounded corners */
+        font-size: 14px; /* Adjust text size for mobile */
     }
 
     .intro-card-content {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
+        width: 100%; /* Full width for content on mobile */
+        text-align: center; /* Center-align text for better readability */
+        margin-bottom: 20px; /* Add spacing below content */
+        color: #fff; /* Ensure text is visible over the background */
     }
 
-    .intro-card-image {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .intro-image {
-        width: 100%;
-        height: auto;
-        border-radius: 12px;
-        object-fit: cover;
-    }
-
-    /* Adjusting title and text for mobile */
     .intro-title {
-        font-size: 2.5  rem;
-        text-align: center;
-        font-family: roboto;
+        font-size: 48px; /* Adjust title font size */
+        margin-bottom: 10px; /* Add spacing below title */
+    }
+
+    .home-heading-top {
+        font-size: 16px; /* Adjust heading size */
+        margin-bottom: 10px; /* Add spacing below heading */
     }
 
     .intro-text {
-        font-size: 1.2rem;
-        text-align: center;
+        font-size: 14px; /* Adjust text size */
+        margin-bottom: 15px; /* Add spacing below paragraph */
+        display: none; /* Hide on mobile */
     }
+
+    .home-top-button {
+        padding: 8px 16px; /* Adjust button size */
+        font-size: 14px; /* Adjust button text size */
+    }
+
+    .intro-card-image {
+        width: 100%; /* Full width for image on mobile */
+        margin: 0 auto; /* Center the image */
+        text-align: center; /* Align image center */
+    }
+
+    .intro-image {
+        width: 100%; /* Make the image responsive */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 8px; /* Rounded corners for the image */
+    }
+
+    .home-heading-services-top {
+        color: rgb(36, 86, 185); /* Retain color */
+        font-size: 18px; /* Adjust font size for smaller screens */
+        text-align: center;
+        margin-top: 20px; /* Adjust margin for smaller screens */
+    }
+
 
     /* Skills Section */
     .skills-container {
@@ -537,6 +550,15 @@ h1, h2, h3 {
         
      
 
+      }
+      .heading-names{
+        font-family: "roboto";
+        text-align: center;
+        font-size: 28px;
+      }
+      .paragraph-names{
+        font-family: roboto;
+        text-align: justify;
       }
 }
   

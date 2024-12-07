@@ -4,9 +4,9 @@ import "./Projects.css";
 const Projects = () => {
   const projects = [
     {
-      title: "Portfolio Website",
+      title: "Nirmaan Website",
       description: "A personal portfolio showcasing my skills, projects, and contact details.",
-      link: "https://example.com/portfolio",
+      link: "https://vizag-nirmaan.vercel.app/home",
       image: "images/Screenshot 2024-12-04 105158.png",
     },
 {
@@ -25,7 +25,7 @@ const Projects = () => {
 
   return (
     <div className="projects-page">
-      <h1 className="projects-title">My Projects</h1>
+      <h1 style={{textAlign:"center",fontFamily:"roboto",padding:"20px"}}>Our Client Projects</h1>
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div key={index} className="project-card">

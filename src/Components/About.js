@@ -82,7 +82,7 @@ const About = () => {
   return (
     <div className="about-page">
         <div className="about-page">
-      <h1 className="projects-title" style={{fontFamily:"roboto"}}>About Us</h1>
+      <h1  style={{fontFamily:"roboto",textAlign:"center"}}>About Us</h1>
       <div className="container">
         {/* Image Section */}
         <div className="imageContainer">
@@ -94,8 +94,9 @@ const About = () => {
         </div>
         {/* Text Section */}
         <div className="textContainer">
-          <h1 className="headingStyle" style={{fontFamily:"roboto"}}>Suresh - Web Developer</h1>
-          <p className="paragraphStyle">
+        <h1 className="heading-names" >Suresh </h1>
+        <h1 className="heading-names" >( Web Developer ) </h1>
+          <p className="paragraph-names">
             Dive into the world of web development with expertise in both
             front-end and back-end technologies. Build responsive, dynamic
             websites and applications that provide seamless user experiences.
@@ -110,11 +111,13 @@ const About = () => {
             src="images/ramarao.jpeg"
             alt="Full Stack Development"
           />
-        </div>
+        </div> 
         {/* Text Section */}
         <div className="textContainer">
-          <h1 className="headingStyle" style={{fontFamily:"roboto"}}>Ramarao - Web Developer</h1>
-          <p className="paragraphStyle">
+          <h1 className="heading-names" >Ramarao </h1>
+          <h1 className="heading-names" >( Web Developer ) </h1>
+
+          <p className="paragraph-names">
             Dive into the world of web development with expertise in both
             front-end and back-end technologies. Build responsive, dynamic
             websites and applications that provide seamless user experiences.

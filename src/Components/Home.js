@@ -28,8 +28,8 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram
 
     ];
     return (
-      <div className="home">
-        {/* Intro Card */}
+      <>
+              {/* Intro Card */}
         <section className="intro-card">
           <div className="intro-card-content">
             <h1 className="intro-title" >Welcome to <spa className="home-heading-span-sr" >SR designers</spa>   </h1>
@@ -48,6 +48,10 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram
             <img src="https://hamid.com.au/wp-content/uploads/2024/02/Web-Design-Adelaide-Hamid-Websites-Portfolio.png" alt="Web Design" className="intro-image" />
           </div>
         </section>
+       
+      <div >
+
+       
         {/* Intro Section */}
         <section className="intro">
           <h1 className="home-heading-services-top" style={{fontFamily:"roboto"}}>We Providing Web Services</h1>
@@ -249,7 +253,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram
       </div>
         {/* Contact Section */}
         <div className="about-page">
-      <h1 className="projects-title" style={{fontFamily:"roboto"}}>About Us</h1>
+      <h1  style={{fontFamily:"roboto",textAlign:"center"}}>About Us</h1>
       <div className="container">
         {/* Image Section */}
         <div className="imageContainer">
@@ -261,8 +265,9 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram
         </div>
         {/* Text Section */}
         <div className="textContainer">
-          <h1 className="headingStyle" style={{fontFamily:"roboto"}}>Suresh - Web Developer</h1>
-          <p className="paragraphStyle">
+        <h1 className="heading-names" >Suresh </h1>
+        <h1 className="heading-names" >( Web Developer ) </h1>
+          <p className="paragraph-names">
             Dive into the world of web development with expertise in both
             front-end and back-end technologies. Build responsive, dynamic
             websites and applications that provide seamless user experiences.
@@ -277,11 +282,13 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram
             src="images/ramarao.jpeg"
             alt="Full Stack Development"
           />
-        </div>
+        </div> 
         {/* Text Section */}
         <div className="textContainer">
-          <h1 className="headingStyle" style={{fontFamily:"roboto"}}>Ramarao - Web Developer</h1>
-          <p className="paragraphStyle">
+          <h1 className="heading-names" >Ramarao </h1>
+          <h1 className="heading-names" >( Web Developer ) </h1>
+
+          <p className="paragraph-names">
             Dive into the world of web development with expertise in both
             front-end and back-end technologies. Build responsive, dynamic
             websites and applications that provide seamless user experiences.
@@ -346,6 +353,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram
       </div>
     </div>
       </div>
+      </>
     );
   };
 
