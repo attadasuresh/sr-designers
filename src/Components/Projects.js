@@ -3,12 +3,7 @@ import "./Projects.css";
 
 const Projects = () => {
   const projects = [
-    {
-      title: "Nirmaan Website",
-      description: "A personal portfolio showcasing my skills, projects, and contact details.",
-      link: "https://vizag-nirmaan.vercel.app/home",
-      image: "images/Screenshot 2024-12-04 105158.png",
-    },
+
 {
       title: "Reco Form",
       description: "Streamlined Forms & Elements for divers categories",
