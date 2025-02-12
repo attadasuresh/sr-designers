@@ -1,16 +1,13 @@
   import React from 'react';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
-
   import './Home.css'; 
   const Home = () => {
-
-
     const projects = [
       {
-        title: "Nirmaan Website",
-        description: "We developed a dynamic and responsive website for Nirmaan Institute .",
-        link: "https://vizag-nirmaan.vercel.app/home",
-        image: "images/Screenshot 2024-12-04 105158.png",
+        title: "Renu beauty parlour",
+        description: "we created frindly beauty parlour website",
+        link: "https://beauty-parlour-xi.vercel.app/",
+        image: "images/image.png",
       },
 
       {
@@ -32,17 +29,14 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram
               {/* Intro Card */}
         <section className="intro-card">
           <div className="intro-card-content">
-            <h1 className="intro-title" >Welcome to <spa className="home-heading-span-sr" >SR designers</spa>   </h1>
-
+            <h1 className="intro-title" >Welcome to <br/><spa className="home-heading-span-sr" > SR-Tech Creators</spa>   </h1>
             <h1 className="home-heading-top"> Creating the best websites for your bUSINESS</h1>
             <p className="intro-text">
               I am a passionate web designer with a keen eye for details and a focus on creating visually appealing and user-friendly websites. Explore my work and let's create something amazing together!
             </p>
             <a href='/contact'>
             <button className='home-top-button'>Contact Now</button>
-
             </a>
-
           </div>
           <div className="intro-card-image">
             <img src="https://hamid.com.au/wp-content/uploads/2024/02/Web-Design-Adelaide-Hamid-Websites-Portfolio.png" alt="Web Design" className="intro-image" />
@@ -55,7 +49,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram
         {/* Intro Section */}
         <section className="intro">
           <h1 className="home-heading-services-top" style={{fontFamily:"roboto"}}>We Providing Web Services</h1>
-          <p className="home-paragraph-services-top" style={{fontFamily:"roboto"}}>
+          <p className="home-paragraph-services-top" style={{fontFamily:"roboto",textAlign:"center"}}>
             I specialize in designing modern and responsive websites that deliver exceptional user experiences. Let's build something incredible!
           </p>
         </section>
@@ -302,7 +296,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram
       <header className="contact-header">
         <a href="/">
 
-        <img  src="images/Screenshot 2024-12-04 113652.png" alt="sr designres Logo" className="contact-logo" />
+        <img  src="images/mainlogo.png" alt="sr designres Logo" className="contact-logo" />
         </a>
       
         <h1>Contact Us</h1>

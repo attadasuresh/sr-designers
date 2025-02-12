@@ -4,11 +4,12 @@ import "./Projects.css";
 const Projects = () => {
   const projects = [
     {
-      title: "Nirmaan Website",
-      description: "A personal portfolio showcasing my skills, projects, and contact details.",
-      link: "https://vizag-nirmaan.vercel.app/home",
-      image: "images/Screenshot 2024-12-04 105158.png",
+      title: "Renu beauty parlour",
+      description: "we created frindly beauty parlour website",
+      link: "https://beauty-parlour-xi.vercel.app/",
+        image: "images/image.png",
     },
+
 {
       title: "Reco Form",
       description: "Streamlined Forms & Elements for divers categories",
@@ -22,12 +23,11 @@ const Projects = () => {
       image: "images/image_2024_12_04T18_52_41_710Z.png",
     },
   ];
-
   return (
     <div className="projects-page">
       <h1 style={{textAlign:"center",fontFamily:"roboto",padding:"20px"}}>Our Client Projects</h1>
       <div className="projects-grid">
-        {projects.map((project, index) => (
+        {projects.map((project, index) =>(
           <div key={index} className="project-card">
             <img src={project.image} alt={project.title} className="project-image" />
             <div className="project-details">
